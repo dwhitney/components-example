@@ -4,7 +4,7 @@ The example uses `purescript-run` to craft an implementation agnostic components
 
 The basic idea is to think at a level up higher than the React `div, a, ul, li` elements and React Native `text, view` elements, and think more at a level akin to the `Box` and `Paper` components from material-ui.com. 
 
-The example app defines a `ComponentDSL` in `src/UI/Component.purs` with two "components": `Box` and `Text`. These are the smallest building blocks of our application. Form there it uses them to define a button in `src/UI.purs"
+The example app defines a `ComponentDSL` in `src/UI/Component.purs` with two "components": `Box` and `Text`. These are the smallest building blocks of our application. From there it uses them to define a button in `src/UI.purs"
 
 ```haskell
 button :: UI.Component JSX
