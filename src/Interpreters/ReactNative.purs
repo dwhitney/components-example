@@ -17,7 +17,7 @@ handler = case _ of
     let onPress = capture_ props.onClick
         jsx = RN.view { children : [ props.child ] }
         touchable = RN.touchableWithoutFeedback { onPress, children : [ jsx ] }
-    pure $ next jsx
+    pure $ next touchable
   Text str next -> do
     pure $ next $ RN.text { children : [ RN.string str ] }
 
